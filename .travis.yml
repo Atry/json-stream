@@ -21,7 +21,7 @@ env:
 before_install:
  - travis_retry sudo add-apt-repository ppa:eyecreate/haxe -y
  - travis_retry sudo apt-get update -qq
- - travis_retry sudo apt-get install -qq neko ocaml
+ - travis_retry sudo apt-get install -qq neko
  - travis_retry wget http://hxbuilds.s3-website-us-east-1.amazonaws.com/builds/haxe/linux64/"$HAXE_FILE"
  - sudo tar zxvf "$HAXE_FILE"
  - sudo mv haxe-*/ haxe/
